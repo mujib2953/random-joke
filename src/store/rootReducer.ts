@@ -1,11 +1,9 @@
 import { combineReducers } from "redux";
 
-import { ChatReducer } from "./chat/reducer";
-import { CalculationReducer } from "./calculations/reducer";
+import { JokeReducer } from "./jokes/reducer";
 
 export const rootReducer = combineReducers({
-    chat: ChatReducer,
-    calci: CalculationReducer,
+    joke: JokeReducer,
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

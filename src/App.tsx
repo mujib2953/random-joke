@@ -3,16 +3,14 @@ import { Provider } from "react-redux";
 
 import { store } from "./store/store";
 
-import Add from "./components/Add";
-import View from "./components/View";
+import Container from './components/Container';
 
 const App = () => {
 	return (
 		<Provider
 			store={ store }
 		>
-			<Add />
-			<View />
+			<Container />
 		</Provider>
 	);
 }

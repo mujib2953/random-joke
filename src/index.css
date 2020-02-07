@@ -1,13 +1,72 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10+ and Edge */
+	user-select: none; /* Standard syntax */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+	height: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	/* background-color: grey; */
+	background-color: #fafafa;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.setup {
+	font-size: 4vh;
+	font-family: 'Sulphur Point', sans-serif;
+}
+
+.punchline {
+	font-size: 8vh;
+	font-family: 'Sulphur Point', sans-serif;
+	margin: 3vh;
+}
+
+.new-joke-btn {
+	padding: 5px;
+	color: #fff;
+	background-color: #3f51b5;
+	font-size: 0.9375rem;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+	min-width: 64px;
+	font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.new-joke-btn:active {
+	box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+p {
+	font-size: 3vh;
+}
+
+@media screen and (max-width: 1024px) {
+	.setup {
+		font-size: 2vh;
+	}
+
+	.punchline {
+		font-size: 3.5vh;
+	}
 }
