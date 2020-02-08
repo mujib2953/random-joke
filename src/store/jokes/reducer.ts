@@ -2,9 +2,9 @@ import { GET_A_JOKE, Joke, JokeTypes } from "./types";
 
 const initialState: Joke = {
     id: 1,
-    type: "test",
-    setup: "Test Setup",
-    punchline: "Test punchline",
+    type: "",
+    setup: "",
+    punchline: "",
 };
 
 export const JokeReducer = (

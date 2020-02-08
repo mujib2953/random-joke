@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { connect } from "react-redux";
 
 import { doGetAJoke } from "../store/jokes/actions";
-
 interface NewJokeBtnProps {
     doGetAJoke: () => void;
 };
