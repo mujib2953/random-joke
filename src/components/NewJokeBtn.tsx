@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { connect } from "react-redux";
+import ReactGA from 'react-ga';
 
 import { doGetAJoke } from "../store/jokes/actions";
 interface NewJokeBtnProps {
@@ -10,7 +11,13 @@ const NewJokeBtn: FC<NewJokeBtnProps> = ({ doGetAJoke }) => {
     return (
         <div
             className="new-joke-btn"
-            onClick={ () => doGetAJoke() }
+            onClick={ () => {
+                doGetAJoke();
+                ReactGA.event({
+                    category: 'jokes',
+                    action: 'new-joke button clicked'
+                });
+            } }
         >
             Get new joke
         </div>
